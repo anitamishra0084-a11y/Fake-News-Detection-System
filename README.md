@@ -81,6 +81,35 @@ The system classifies a news article as **Real News** or **Fake News** and also 
 - Add support for news articles in multiple languages.
 - Deploy the application on a cloud platform for public access.
 
+## Important Note
+
+The following files are not included in this repository because they are large generated files and can be recreated by running the project:
+
+- `dataset/Fake.csv`
+- `dataset/True.csv`
+- `dataset/clean_news.csv`
+- `model.pkl`
+- `vectorizer.pkl`
+
+### How to Run the Project
+
+1. Download the **Fake and Real News Dataset**.
+2. Place `Fake.csv` and `True.csv` inside the `dataset/` folder.
+3. Run the following commands:
+
+```bash
+python preprocessing.py
+python train_model.py
+python app.py
+```
+
+These commands will automatically generate:
+
+- `clean_news.csv`
+- `model.pkl`
+- `vectorizer.pkl`
+
+
 ## Author
 
 **Anita Mishra**
